@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" width="600" height="760">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9aa86a"/><stop offset="1" stop-color="#4b5a2a"/></linearGradient></defs>
+<rect width="600" height="760" fill="url(#g)"/>
+<g fill="#f0e4bb" opacity=".85"><circle cx="300" cy="288" r="84"/><path d="M108 760 C120 516 480 516 492 760Z"/></g>
+<text x="50%" y="726" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="45" fill="#e9c64a">Foto de pasaporte</text>
+</svg>

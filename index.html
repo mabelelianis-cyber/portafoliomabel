@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elianis Pérez | Portafolio</title>
+  <meta name="description" content="Portafolio de Elianis Pérez: proyectos, habilidades y una invitación a abordar.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Jost:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ RIEL DE NAVEGACIÓN: el avión baja con el scroll ============ -->
+<nav class="rail" aria-label="Secciones">
+  <div class="rail__track" aria-hidden="true">
+    <span class="rail__line"></span>
+    <svg class="rail__plane" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+  </div>
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#yo">Yo</a></li>
+    <li><a href="#salidas">Salidas</a></li>
+    <li><a href="#destinos">Destinos</a></li>
+    <li><a href="#cine">Cine</a></li>
+    <li><a href="#abordar">Abordar</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<!-- ============ INICIO ============ -->
+<header class="hero sec" id="inicio">
+  <svg class="hero__ruta" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <mask id="revela">
+        <path class="hero__reveal" pathLength="1" d="M-40 640 C 240 680, 300 130, 640 230 S 1040 420, 1260 70" fill="none" stroke="#fff" stroke-width="14"/>
+      </mask>
+    </defs>
+    <path id="ruta" d="M-40 640 C 240 680, 300 130, 640 230 S 1040 420, 1260 70" fill="none" stroke="#e9c64a" stroke-width="2.5" stroke-dasharray="3 12" stroke-linecap="round" mask="url(#revela)"/>
+    <g id="avion-hero">
+      <path transform="translate(-22 -22) scale(1.8) rotate(90 12 12)" fill="#f0e4bb" d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+      <animateMotion dur="3.6s" begin="0.5s" rotate="auto" fill="freeze" calcMode="linear"><mpath href="#ruta"/></animateMotion>
+    </g>
+  </svg>
+
+  <button class="campana" id="btn-anuncio" type="button" aria-pressed="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22zm7-6V11a7 7 0 0 0-5-6.7V3a2 2 0 0 0-4 0v1.3A7 7 0 0 0 5 11v5l-2 2v1h18v-1z"/></svg>
+    <span>Anuncio de cabina</span>
+  </button>
+
+  <div class="hero__texto">
+    <h1 class="hero__nombre">
+      <span class="hero__n1">Elianis</span>
+      <span class="hero__n2">Pérez</span>
+    </h1>
+    <p class="hero__lema">Portafolio de una soñadora con la mirada puesta en el cielo. <!-- EDITA: tu frase --></p>
+    <a class="boton" href="#yo">Ver mi trayectoria</a>
+  </div>
+
+  <figure class="hero__foto">
+    <div class="hero__sol" aria-hidden="true"></div>
+    <img src="img/perfil.svg" alt="Retrato de Elianis Pérez" width="800" height="1000">
+  </figure>
+</header>
+
+<!-- ============ YO: página de pasaporte ============ -->
+<section class="sec yo" id="yo">
+  <div class="pasaporte">
+    <div class="pasaporte__foto">
+      <img src="img/perfil-2.svg" alt="Foto de pasaporte de Elianis" width="600" height="760">
+      <svg class="sello" viewBox="0 0 120 120" aria-hidden="true">
+        <defs><path id="circ" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0"/></defs>
+        <circle cx="60" cy="60" r="56" fill="none" stroke="currentColor" stroke-width="3"/>
+        <circle cx="60" cy="60" r="34" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <text font-family="Fraunces,serif" font-style="italic" font-size="13" fill="currentColor"><textPath href="#circ" startOffset="0">Equipaje listo • Despegue autorizado •</textPath></text>
+        <path transform="translate(42 42) scale(1.5)" fill="currentColor" d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+      </svg>
+    </div>
+
+    <div class="pasaporte__datos">
+      <h2>Datos de la viajera</h2>
+      <dl>
+        <div><dt>Nombre</dt><dd>Elianis Pérez</dd></div>
+        <div><dt>Nacionalidad</dt><dd>Panameña</dd></div>
+        <div><dt>Ocupación</dt><dd>Estudiante y creadora <!-- EDITA --></dd></div>
+        <div><dt>Destino</dt><dd>Cualquier lugar donde pueda crecer <!-- EDITA --></dd></div>
+        <div><dt>Pasión</dt><dd>Los aviones, los aeropuertos y las historias que cruzan fronteras</dd></div>
+      </dl>
+      <p>
+        Soy Elianis. Desde niña me quedo mirando cada avión que cruza el cielo de Panamá y me pregunto a dónde irá.
+        Esa curiosidad es la que hoy me impulsa a aprender, crear y proponerme metas cada vez más altas.
+        <!-- EDITA: escribe aquí tu presentación personal -->
+      </p>
+      <p>
+        Mi ciudad es parte de una de las rutas más importantes de las Américas, y eso me recuerda que todo gran viaje empieza en casa.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SALIDAS: habilidades como tablero de aeropuerto ============ -->
+<section class="sec salidas" id="salidas">
+  <h2>Tablero de salidas</h2>
+  <p class="salidas__intro">Estas son las habilidades que ya tengo en mi equipaje de mano.</p>
+
+  <div class="tablero" role="table" aria-label="Habilidades">
+    <div class="tablero__fila tablero__cab" role="row">
+      <span role="columnheader">Habilidad</span><span role="columnheader">Puerta</span><span role="columnheader">Estado</span>
+    </div>
+    <div class="tablero__fila" role="row">
+      <span role="cell"><b data-flip>Creatividad visual</b><small>Ideas con color, forma y mucho detalle.</small></span>
+      <span role="cell" data-flip>A1</span>
+      <span role="cell" class="e-abordando" data-flip>Abordando</span>
+    </div>
+    <div class="tablero__fila" role="row">
+      <span role="cell"><b data-flip>Comunicación</b><small>Explicar lo que pienso con claridad.</small></span>
+      <span role="cell" data-flip>A2</span>
+      <span role="cell" class="e-vuelo" data-flip>En vuelo</span>
+    </div>
+    <div class="tablero__fila" role="row">
+      <span role="cell"><b data-flip>Trabajo en equipo</b><small>Cada tripulación necesita buena coordinación.</small></span>
+      <span role="cell" data-flip>B1</span>
+      <span role="cell" class="e-tiempo" data-flip>A tiempo</span>
+    </div>
+    <div class="tablero__fila" role="row">
+      <span role="cell"><b data-flip>Inglés</b><small>El idioma oficial de los cielos.</small></span>
+      <span role="cell" data-flip>B3</span>
+      <span role="cell" class="e-vuelo" data-flip>En vuelo</span>
+    </div>
+    <div class="tablero__fila" role="row">
+      <span role="cell"><b data-flip>Organización</b><small>Planes claros y tiempos cumplidos.</small></span>
+      <span role="cell" data-flip>C2</span>
+      <span role="cell" class="e-abordando" data-flip>Abordando</span>
+    </div>
+  </div>
+  <!-- EDITA: cambia o agrega filas copiando un bloque tablero__fila completo -->
+</section>
+
+<!-- ============ DESTINOS: proyectos como postales ============ -->
+<section class="sec destinos" id="destinos">
+  <h2>Destinos que ya visité</h2>
+  <p class="destinos__intro">Cada proyecto es una postal de un lugar al que llegué trabajando.</p>
+
+  <div class="postales">
+    <article class="postal">
+      <img src="img/proyecto-1.svg" alt="Imagen del proyecto Alas de papel" width="900" height="700">
+      <div class="postal__cuerpo">
+        <h3>Alas de papel</h3>
+        <p>Una campaña visual sobre cómo los sueños pequeños aprenden a volar. Aquí cuentas qué hiciste y qué lograste.</p>
+        <p class="postal__ruta">Diseño, 2026</p>
+      </div>
+      <span class="postal__timbre" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></span>
+    </article>
+
+    <article class="postal">
+      <img src="img/proyecto-2.svg" alt="Imagen del proyecto Diario de a bordo" width="900" height="700">
+      <div class="postal__cuerpo">
+        <h3>Diario de a bordo</h3>
+        <p>Textos cortos sobre viajes, aprendizajes y cosas que veo desde la ventanilla. Cambia esta descripción por la tuya.</p>
+        <p class="postal__ruta">Escritura, 2025</p>
+      </div>
+      <span class="postal__timbre" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></span>
+    </article>
+
+    <article class="postal">
+      <img src="img/proyecto-3.svg" alt="Imagen del proyecto Rumbo a la pista" width="900" height="700">
+      <div class="postal__cuerpo">
+        <h3>Rumbo a la pista</h3>
+        <p>Una colección de fotografías de aviones y aeropuertos. Aquí va lo que más te gustó de ese proyecto.</p>
+        <p class="postal__ruta">Fotografía, 2025</p>
+      </div>
+      <span class="postal__timbre" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></span>
+    </article>
+  </div>
+</section>
+
+<!-- ============ CINE: video de YouTube ============ -->
+<section class="sec cine" id="cine">
+  <h2>Mi historia en movimiento</h2>
+  <p class="cine__intro">Dale play y cuéntame si llegamos a buen puerto.</p>
+
+  <div class="cine__pantalla">
+    <div class="cine__tira" aria-hidden="true"></div>
+    <!-- EDITA: pega aquí el enlace de tu video de YouTube dentro de data-video -->
+    <div class="cine__video" id="video" data-video="PEGA_AQUI_EL_LINK_DE_YOUTUBE"></div>
+    <div class="cine__tira" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ============ ABORDAR: contacto como pase de abordar ============ -->
+<section class="sec abordar" id="abordar">
+  <h2>Embarque abierto</h2>
+  <p class="abordar__intro">Escribe tu nombre y emite tu pase. Después puedes enviarme un mensaje desde él.</p>
+
+  <form class="emitir" id="form-pase" autocomplete="off">
+    <label for="nombre-pasajero">Tu nombre</label>
+    <input id="nombre-pasajero" type="text" maxlength="28" placeholder="Por ejemplo: Camila" required>
+    <button class="boton boton--oscuro" type="submit">Emitir mi pase</button>
+  </form>
+
+  <article class="pase" id="pase" aria-live="polite">
+    <div class="pase__principal">
+      <p class="pase__linea">Elianis Air, clase Portafolio</p>
+      <dl class="pase__datos">
+        <div class="pase__largo"><dt>Pasaje a nombre de</dt><dd id="p-nombre">Invitada o invitado especial</dd></div>
+        <div><dt>Desde</dt><dd>Tu curiosidad</dd></div>
+        <div><dt>Hacia</dt><dd>Mi portafolio</dd></div>
+        <div><dt>Vuelo</dt><dd>EP 001</dd></div>
+        <div><dt>Asiento</dt><dd>1A</dd></div>
+        <div><dt>Fecha</dt><dd id="p-fecha">—</dd></div>
+        <div><dt>Puerta</dt><dd>Contacto</dd></div>
+      </dl>
+      <span class="pase__confirmado" id="p-sello" hidden>Abordaje confirmado</span>
+    </div>
+    <div class="pase__talon">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+      <p id="p-talon">1A</p>
+    </div>
+  </article>
+
+  <ul class="contacto">
+    <!-- EDITA: cambia los enlaces por los reales -->
+    <li><a id="enlace-correo" href="mailto:elianis@ejemplo.com">Enviarle un correo</a></li>
+    <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+    <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="pie">
+  <p>Gracias por volar con Elianis Pérez. Esperamos verte pronto a bordo.</p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

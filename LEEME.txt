@@ -1,0 +1,37 @@
+PORTAFOLIO DE ELIANIS PÉREZ - Cómo editarlo
+===========================================
+
+Abre index.html con doble clic para verlo en el navegador.
+
+ESTRUCTURA
+  index.html     -> todos los textos (busca los comentarios EDITA)
+  css/style.css  -> colores (arriba del archivo) y diseño
+  js/main.js     -> correo y texto del anuncio de cabina (arriba del archivo)
+  img/           -> las imágenes
+
+1) VIDEO DE YOUTUBE
+   En index.html busca data-video="PEGA_AQUI_EL_LINK_DE_YOUTUBE"
+   y pega el enlace completo del video.
+
+2) COLORES DEL CANVA
+   En css/style.css, al inicio, cambia los 5 códigos (--tinta, --musgo,
+   --salvia, --mantequilla, --crema). Todo el sitio se actualiza solo.
+
+3) FOTOS
+   Guarda tus fotos dentro de img/ y cambia el nombre en el src
+   de index.html (por ejemplo src="img/perfil.jpg").
+   perfil -> foto del inicio (vertical)   perfil-2 -> foto tipo pasaporte
+   proyecto-1/2/3 -> imágenes de los proyectos (horizontales)
+
+4) TEXTOS, HABILIDADES Y PROYECTOS
+   Todo está en index.html. Para agregar una habilidad copia un bloque
+   "tablero__fila"; para un proyecto copia un bloque "postal".
+
+5) CORREO Y REDES
+   Correo: arriba de js/main.js (CONFIG.correo).
+   Instagram y LinkedIn: al final de index.html, sección "contacto".
+
+6) ANUNCIO DE CABINA
+   El texto que lee la voz está en js/main.js, en CONFIG.anuncio.
+
+Para publicarlo gratis: sube la carpeta completa a Netlify, GitHub Pages o Vercel.
